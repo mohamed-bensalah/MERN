@@ -1,6 +1,6 @@
 import React from "react";
 
-const PersonCard = (props) => {
+const puttingItTogether = (props) => {
   const { firstName, lastName, hair } = props;
 
   return (
@@ -14,4 +14,4 @@ const PersonCard = (props) => {
   );
 }
 
-export default PersonCard;
+export default putting-it-together;
