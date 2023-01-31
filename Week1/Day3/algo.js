@@ -1,13 +1,12 @@
-const num = [1,3,4,6,7,9];
-const searchNum = 6 ;
-function binarySearch(sortedNum, searchNum){
-if(searchNum<num[0]) {
-    for(let i = 0 ; i< num.lenght - 1 ; i++){
-    return true
+var arr = [ [2, 5, 9]
+            [4, 7, 8]
+            [3, 1, 8] ];
+            console.log(arr[0] [2]);
+function isPresent2d(arr, value)
+for(let i = 0 ; i < arr.length-1 ;i++){//arr
+    for(let i = arr.length){
+        if (){
+    } return true
     }
-}
-else(searchNum>num[0]){
-    for(let i = num.lenght-1%2 ;i=0 ; i++){
-        return false
-    }
+
 }
