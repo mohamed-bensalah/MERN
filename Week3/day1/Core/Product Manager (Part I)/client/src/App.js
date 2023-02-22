@@ -1,15 +1,20 @@
-import "./App.css";
-import CreateProduct from "./components/CreateProduct";
+import './App.css';
+import Main from './view/Main';
+import {Route, Routes} from "react-router-dom";
+import Details from './components/Details';
 
 
 function App() {
-    return (
-        <div className="App">
-            {/* For now, we only have our single Create component.
-                The "/" path is our root. When we run npm start, this will be what displays at localhost:3000 */}
-            <CreateProduct path="/" />
-        </div>
-    );
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/products/:id/" element={<Details />} />
+
+
+      </Routes>
+    </div>
+  );
 }
 
 export default App;

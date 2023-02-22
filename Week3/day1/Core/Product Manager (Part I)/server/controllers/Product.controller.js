@@ -1,16 +1,38 @@
-const Product = require("../models/product.model.js"); //Import the model from the model file
+const Product = require("../models/Product.model");
 
-//With this syntax, we are exporting an object that consists of key:value pairs
-    //the values consist of the logic used to query the DB
-module.exports = {
-    createProduct: (req, res) => { //We name the key and the value is going to be the function that queries DB
-        Product.create(req.body) //We use the Product model to create a new product document. We take in the body of the request from the client.
-            .then((newProduct) => res.json(newProduct)) //That returns a promise whose resolution we handle with then, and run .json on our response so that we can easily read the JSON object.
+
+
+module.exports.getAllProducts=(req, res) => {
+        Product.find({})
+            .then((allProducts) => res.json(allProducts))
             .catch((err) => console.log(err));
-    },
-    AllProduct: (req, res) => {
-        Product.get(req)
+    }
+
+
+    module.exports.createProduct= (req, res) => {
+        Product.create(req.body)
             .then((newProduct) => res.json(newProduct))
             .catch((err) => console.log(err));
-}
+    },
+
+module.exports.getOneProduct=(req, res) => {
+        Product.findOne({ _id: req.params.id })
+            .then((oneProduct) => res.json(oneProduct))
+            .catch((err) => console.log(err));
     }
+
+
+module.exports.DeleteOneProduct=(req , res) =>{
+    Product.deleteOne({ _id: req.params.id })
+    .then(result =>res.json("Delete with "))
+    .catch((err) => console.log(err));
+}
+
+module.exports.updateProduct= (req, res) => {
+    Product.findByIdAndUpdate({ _id: req.params.id }, req.body, {
+        new: true,
+        runValidators: true,
+    })
+        .then((updatedProduct) => res.json(updatedProduct))
+        .catch((err) => console.log(err));
+}

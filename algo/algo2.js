@@ -545,3 +545,356 @@
     //     console.log(message + x);
     //     x--;
     // }
+
+
+
+    // Level 9(5/5)
+    // challenge 1
+
+    // var number = ' ';
+    // var x = 5;
+    // while(x<10)
+    // {
+    //     number += x;
+    //     x++
+    // }
+    // console.log(number);
+
+
+// Level 9(5/5)
+// challenge 2
+
+    // var count = 1;
+    // while(count<5){
+    //     console.log('Dojo');
+    //     count++;
+    // }
+
+// Level 9(5/5)
+// challenge 3
+
+    // var x =1;
+    // var y = 48;
+    // while (x<100){
+    //     if(x == y){
+    //         break
+    //     }
+    //     x++;
+    // }
+    // console.log(x);
+
+// Level 9(5/5)
+// challenge 4
+
+    // var message = 'coding'
+    // var x = 1 ;
+    // while(x<100){
+    //     console.log(x);
+    //     x++;
+    // }
+    // console.log(message);
+
+
+// Level 9(5/5)
+// challenge 5
+
+    // var x = 7;
+    // var message = 'boom';
+    // while(x>message.length){
+    //     console.log(message+x);
+    //     x--;
+    // }
+
+
+
+// Level 10(5/5)
+// challenge 1
+
+    // var x = [['coding','boom'],['dojo','yeah']]
+    // console.log(x[0][0 +'-'+ x[1][0]]);
+
+
+// Level 10(5/5)
+// challenge 2
+
+    // var x =[[5,10],[15,20,25,30],[45,50]];
+    // console.log(x[1][3]+x[2][1]+x[0][0]);
+
+
+// Level 10(5/5)
+// challenge 3
+
+        // var x = 2;
+        // var y = [[2,4,6,8],[10],[12,32,50]];
+        // if(y[0][0]==x){
+        //     console.log('hello world');
+        // }
+        // else{
+        //     console.log('codingDojo');
+        // }
+
+
+// Level 10(5/5)
+// challenge 4
+
+    // var numbers = [[1,4,5,7],[2,6,8,9]]
+    // if(numbers[0][3] == 7){
+    //     numbers[0].push(10);
+    //     console.log(numbers([0]));
+    // }
+
+
+// Level 10(5/5)
+// challenge 5
+
+    // var x = [[2,4,6,8],[12],[10,32,50]];
+    // if(x[1][0] - x[2][0] ==x[0][0])
+    // {
+    //     console.log(x[1][0]+x[2][1]+x[0][2]);
+    // }
+    // else{
+    // console.log((x[1][0] - x[2][0] ==x[0][0]));
+    // }
+
+// Level 11(5/5)
+// challenge 1
+
+    // var x =[];
+    // x[0]='hello'
+    // x[1]='world'
+    // x[2]=100;
+    // console.log(x.length +''+x[0]);
+
+// Level 11(5/5)
+// challenge 2
+
+    //     var x = 2;
+    //     var point = [40,100,1,5,25,10];
+    //     if(point[x] == 1){
+    //         console.log(point[x-2]);
+    //     }
+    //     else{
+    // console.log(hello);
+    //     }
+
+// Level 11(5/5)
+// challenge 3
+
+    // var x = 2;
+    // var y = [1,2,3,4,5];
+    // var z = [6,7,8,9,10];
+    // if(y[x]+z[1]==z[4]){
+    //     console.log('dojo');
+    // }
+    // else{
+    //     console.log('Hello World');
+    // }
+
+// // Level 11(5/5)
+// // challenge 4
+
+
+    // var x = 'boom';
+    // var y = ['hi', 'hello', 'hey']
+    // if(x.length==3){
+    //     console.log(x[3]);
+    // }
+    // else{
+    //     console.log(x);
+    // }
+
+// Level 11(5/5)
+// challenge 5
+
+    // var x = ['john' , 'chris' , 'mark' , 'pj'];
+    // if(x.length == 4){
+    //     console.log(x[x.length-3]);
+    // }
+    // else{
+    //     console.log('dojo');
+    // }
+
+
+// Level 12(21/21)
+// challenge 1
+
+    // var a = 100;
+    // function abc(){
+    //     var a = 25;
+    // }
+    // console.log(a);
+
+// Level 12(21/21)
+// challenge 2
+
+
+    // var a = 100;
+    // function abc(){
+    //     var a = 25;
+    // }
+    // abc()
+    // console.log(a);
+
+
+// Level 12(21/21)
+// challenge 3
+
+    // var a = 100;
+    // function abc(){
+    //     var a = 25;
+    //     console.log(a);
+    // }
+    // abc()
+    // console.log(a);
+
+// level 12(21/21)
+// challenge 4
+
+    // var x = 10;
+    // function abc(x) {
+    //     console.log(x);
+    //     return x*10;
+    // }
+    // console.log(x);
+
+// level 12(21/21)
+// challenge 5
+
+    // var x = 10;
+    // function abc(x) {
+    //     console.log(x);
+    //     return x*10;
+    // }
+    // abc(x)
+    // console.log(x);
+
+//level 12(21/21)
+//challenge 6
+
+    // var x = 10;
+    // function abc(x) {
+    //     console.log(x);
+    //     return x*10;
+    // }
+    // var z = abc(x)
+    // console.log(x);
+
+//level 12(21/21)
+//challenge 7
+
+    // var x = 10;
+    // function abc(x) {
+    //     console.log(x);
+    //     return x*10;
+    // }
+    // var z = abc(x) + abc(x)
+    // console.log(x);
+
+//level 12(21/21)
+//challenge 8
+
+    // var x = 10 , y = 20;
+    // function abc(x, y) {
+    //     x = x + 10;
+    //     y = y + 10 ;
+    //     console.log(x);
+    //     console.log(y);
+    // }
+
+//level 12(21/21)
+//challenge 9
+
+    // var x = 10 , y = 20;
+    // function abc(x, y) {
+    //     x = x + 10;
+    //     y = y + 10 ;
+    //     console.log(x);
+    //     console.log(y);
+    // }
+    // abc(x, y);
+    // console.log(x);
+    // console.log(y);
+
+//level 12(21/21)
+//challenge 10
+
+    // var x = 10 , y = 20;
+    // function abc(x, y) {
+    //     x = x + 10;
+    //     y = y + 10 ;
+    //     console.log(x);
+    //     console.log(y);
+    //     return x*10
+    // }
+    // z = abc(x, y)
+    // abc(x, y);
+    // console.log(x);
+    // console.log(y);
+
+//level 12(21/21)
+//challenge 11
+
+    // var x = 10, y = 20;
+    // function abc(x, y) {
+    //     x=x+10
+    //     y=y+10
+    //     return x*10
+    // }
+    // z = abc (x, y) + abc (y, x)
+    // console.log(z);
+
+//level 12(21/21)
+//challenge 12
+
+    // var x = [1,3,5,7];
+    // function abc() {
+    //     var x = [0,1,2,3]
+    //     for (var i = 0 ; i < x.length ;i++){
+    //         x[i] = x[i] + 2 ;
+    //     }
+    // }
+    // abc();
+    // console.log(x);
+
+//level 12(21/21)
+//challenge 13
+
+    //   var x = [1,3,5,7];
+    // function abc() {
+    //     var x = [0,1,2,3]
+    //     for (var i = 0 ; i < x.length ;i++){
+    //         x[i] = x[i] + 2 ;
+    //     }
+    // return  x;
+    // }
+    // abc();
+    // console.log(x);
+
+//level 12(21/21)
+//challenge 14
+
+
+    // var x = [1,3,5,7];
+    // function abc() {
+    //     var x = [0,1,2,3]
+    //     for (var i = 0 ; i < x.length ;i++){
+    //         x[i] = x[i] + 2 ;
+    //     }
+    // return  x;
+    // }
+    // x = abc();
+    // console.log(x);
+
+//level 12(21/21)
+//challenge 15
+
+    function abc(num){
+        var arr = []
+        for(var i = 0 ; i < num ;i++){
+            arr.push(i)
+        }
+        return arr;
+    }
+    dojo = abc(5);
+    console.log(dojo);
+
