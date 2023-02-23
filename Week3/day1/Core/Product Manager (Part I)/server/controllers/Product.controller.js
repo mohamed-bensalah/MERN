@@ -25,7 +25,7 @@ module.exports.getOneProduct=(req, res) => {
 module.exports.DeleteOneProduct=(req , res) =>{
     Product.deleteOne({ _id: req.params.id })
     .then(result =>res.json("Delete with "))
-    .catch((err) => console.log(err));
+    .catch((err) => res.json(400).json(err));
 }
 
 module.exports.updateProduct= (req, res) => {

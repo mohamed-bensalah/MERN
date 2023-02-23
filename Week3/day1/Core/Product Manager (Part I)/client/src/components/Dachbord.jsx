@@ -3,9 +3,10 @@ import { useEffect } from 'react'
 import axios from "axios"
 import { Link } from 'react-router-dom'
 
-const Dachbord = () => {
+const Dachbord = (props) => {
 
     const [Products,setProducts]=useState([])
+    const {refresh, refreshed}=props
 
     useEffect(()=>{
         axios.get("http://localhost:8000/api/products")
@@ -13,8 +14,17 @@ const Dachbord = () => {
           console.log(Response.data);
           setProducts(Response.data)})
         .catch(err =>console.log(err))
-    },[])
+    },[refreshed])
 
+      const deleteHandler =(id)=>{
+        axios.delete("http://localhost:8000/api/deleteProduct/"+id)
+        .then(Response=>{refresh()})
+        .catch(err =>console.log(err))
+      }
+
+      
+
+ 
     return (
     <>
   <h1>Dachbor</h1>
@@ -22,11 +32,13 @@ const Dachbord = () => {
     {
       Products.map((Product,index)=>{
         return <div>
-          <Link to={"/api/products/"+Product._id}>
+          <Link to={"/products/"+Product._id}>
           <h3>{Product.title}</h3>
-          </Link>
+          <p>{Product._id}</p>
           <h3>{Product.price}</h3>
           <h3>{Product.description}</h3>
+          </Link>
+          <button class="btn" onClick={(e)=>deleteHandler(Product._id)}>Delete product</button>
           <hr/>
         </div>
       })
