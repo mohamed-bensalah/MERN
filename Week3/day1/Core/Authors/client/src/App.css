@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+
+.App {
+  text-align: center;
+  align-items: stretch;
+  background-color: #ffe484;
+
+  align-items: center;
+  display: grid;
+}
+body{
+  background-color: #ffe484;
+  font-size: 1.8rem;
+  font-family: "Sansita Swashed", cursive;
+  
+}
+
+*{
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.container{
+  text-align: center;
+  width: 1000px;
+  height: 600px;
+}
+.row{
+    background-image: url("./img/books.jpg");
+  height: 600px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+}
+
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.input{
+  display: block;
+  width: 100%;
+  font-size: font-size;
+  line-height: font-size * 2;
+  font-family: inherit;
+  margin-bottom: font-size * 2;
+  border-bottom: 5px solid rgba(0,0,0,1);
+  margin-bottom: 10px;
+  
+
+}
+
+
+.link{
+  color: aqua;
+  border-top: 500px;
+}
+
+
+
+
+.table,
+    td, th {
+      vertical-align: middle;
+}
