@@ -7,20 +7,19 @@ import Button from '@mui/material/Button';
 
 const EditAuthor = (props) => {
   const { id } = useParams();
-  const [authorName, setAuthorName] = useState("");
-  const [errors, setErrors] = useState({});
-  const [authorNotFoundError, setAuthorNotFoundError] = useState("");
+  const [PetName, setPetName] = useState("");
+  const [PetType, setPetType] = useState({});
   const navigate = useNavigate()
   console.log(id);
+
+  
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/author/${id}`)
+      .get(`http://localhost:8000/api/allPetShelter/${id}`)
       .then((response) => {
-        setAuthorName(response.data.name);
+        setPetName(response.data.name);
       })
-      .catch((err) => {
-        setAuthorNotFoundError(`Author not found using that ID`);
-      });
+      .catch((err) => console.log(err.response));
   }, []);
 
   const submitHandler = (e) => {
